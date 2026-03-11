@@ -26,7 +26,7 @@ function checkresult(){
         let b = i[1];
         let c = i[2];
         if(board[a] !=""&& board[a] === board[b] && board[a] === board[c]){
-        statustext.textContent = `🎉 CONGRATULATIONS 🎉\nPlayer ${board[a]} Wins!`;
+        statustext.textContent = ` CONGRATULATIONS \nPlayer ${board[a]} Wins!`;
         statustext.classList.add("win-text");
         gameActive = false;
         boxes.forEach(box => box.disabled = true);
@@ -80,3 +80,4 @@ function clicked(event){
 }
 
 resetbtn.addEventListener("click", resetGame);
+
